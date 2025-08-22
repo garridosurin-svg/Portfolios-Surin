@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surin Garrido — Portfolio</title>
+  <meta name="description" content="Portfolio of Surin Garrido: Graphic Design, Web Development, Social Media Marketing, Data Entry, Executive Assistant."/>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Logo + brand text */
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #e8eefc; font-weight: bold; }
+    .logo-circle { width: 50px; height: 50px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; border: 2px solid #4f8cff; }
+    .logo-circle img { width: 100%; height: 100%; object-fit: cover; }
+    .brand-text { font-size: 1.2rem; }
+
+    /* Font Awesome service/project icons */
+    .icon { display: block; margin: 0 auto 1rem; color: #4f8cff; transition: transform 0.3s ease, color 0.3s ease; }
+    .icon:hover { transform: scale(1.2); color: #1a6aff; }
+
+    /* Responsive nav */
+    .nav-links { list-style: none; display: flex; gap: 1rem; }
+    .nav-toggle { display: none; font-size: 1.8rem; background: none; border: none; color: #fff; cursor: pointer; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; flex-direction: column; gap: 0; background: #101826; position: absolute; top: 60px; right: 0; width: 200px; padding: 1rem; border-radius: 5px; }
+      .nav-links.show { display: flex; }
+      .nav-toggle { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="#home">
+      <div class="logo-circle">
+        <img src="img/L.jpg" alt="Logo" class="logo" />
+      </div>
+      <span class="brand-text">Surin Garrido</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#skills">Tools</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="btn btn-sm">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section id="home" class="hero container">
+   <div class="hero-copy">
+  <p class="eyebrow">Surin Garrido</p>
+  <h1><span class="accent">Social Media Marketing</span></h1>
+ <p class="lead">
+  I help brands grow and engage their audience through <strong>Social Media Marketing</strong>. 
+  From creating eye-catching content and managing campaigns to analyzing performance and boosting engagement, 
+  I ensure every post connects with the right audience. Together, we create campaigns that attract attention, 
+  drive engagement, and deliver measurable results.
+</p>
+
+  <div class="hero-cta">
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="#contact" class="btn btn-ghost">Hire Me</a>
+  </div>
+</div>
+    <div class="hero-art">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Male professional working on a laptop" />
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section container">
+    <h2 class="section-title">Services I Offer</h2>
+    <div class="grid cards-3">
+      <article class="card">
+        <i class="fa-solid fa-laptop-code icon"></i>
+        <h3>Web Development</h3>
+        <p>Responsive websites (HTML/CSS/JS & PHP), clean UI, fast performance.</p>
+      </article>
+      <article class="card">
+        <i class="fa-solid fa-pencil-ruler icon"></i>
+        <h3>Graphic Design</h3>
+        <p>Create eye-catching visuals, social media posts, and brand assets.</p>
+      </article>
+      <article class="card">
+        <i class="fa-brands fa-facebook icon"></i>
+        <h3>Social Media Marketing</h3>
+        <p>Content calendars, captions, and scheduling via Meta Business Suite.</p>
+      </article>
+      <article class="card">
+        <i class="fa-solid fa-video icon"></i>
+        <h3>Video Editing</h3>
+        <p>Professional video editing for polished social media and marketing content.</p>
+      </article>
+      <article class="card">
+        <i class="fa-solid fa-pen-fancy icon"></i>
+        <h3>Content Writing</h3>
+        <p>Engaging blog posts, articles, and marketing copy in your brand voice.</p>
+      </article>
+      <article class="card">
+        <i class="fa-solid fa-users icon"></i>
+        <h3>Social Media Management</h3>
+        <p>Consistent posts, community engagement, and performance tracking.</p>
+      </article>
+      <article class="card">
+        <i class="fa-solid fa-envelope icon"></i>
+        <h3>Email Management</h3>
+        <p>Design and send email campaigns that convert and retain customers.</p>
+      </article>
+      <article class="card">
+        <i class="fa-solid fa-book icon"></i>
+        <h3>Bookkeeping</h3>
+        <p>Keep finances organized with accurate records and monthly reports.</p>
+      </article>
+      <article class="card">
+        <i class="fa-solid fa-bullseye icon"></i>
+        <h3>Lead Generation</h3>
+        <p>Identify and attract potential customers to grow your sales pipeline.</p>
+      </article>
+      <article class="card">
+        <i class="fa-solid fa-user-tie icon"></i>
+        <h3>Executive Assistance</h3>
+        <p>Professional support to manage schedules, correspondence, and tasks.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Tools I Use</h2>
+      <ul class="skill-tags">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        <li>PHP (basic)</li><li>Canva</li><li>Adobe Photoshop</li>
+        <li>WordPress</li><li>Microsoft Office</li><li>ChatGPT</li>
+        <li>Trello</li><li>Slack</li><li>Email</li>
+        <li>Google Workspace</li><li>QuickBooks</li><li>Figma</li>
+        <li>CapCut</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section container">
+    <h2 class="section-title">Projects Experience</h2>
+    <div class="grid cards-3">
+      <article class="card project">
+        <i class="fa-solid fa-file-lines icon"></i>
+        <div class="card-body">
+          <h3>Resume</h3>
+          <p>Clean and professional resume showcasing skills and experience.</p>
+          <a href="https://drive.google.com/file/d/1EIslj2jwRfIJT27Et_pZ138ArlP4kFKc/view?usp=sharing" class="btn btn-view">View</a>
+        </div>
+      </article>
+      <article class="card project">
+        <i class="fa-brands fa-facebook icon"></i>
+        <div class="card-body">
+          <h3>Social Media Marketing</h3>
+          <p>Handled Facebook content and designed campaigns to boost engagement.</p>
+          <a href="https://www.facebook.com/profile.php?id=61560337711576" class="btn btn-view">View</a>
+        </div>
+      </article>
+      <article class="card project">
+        <i class="fa-solid fa-paintbrush icon"></i>
+        <div class="card-body">
+          <h3>Graphic Design</h3>
+         <p>Created visuals and branding materials for businesses and social media.</p>
+          <a href="https://drive.google.com/drive/folders/1-z7pupvGrQoILTWDHngrrP2k62UXj0Y8" class="btn btn-view">View</a>
+        </div>
+      </article>
+      <article class="card project">
+        <i class="fa-solid fa-user-plus icon"></i>
+        <div class="card-body">
+          <h3>Lead Generation</h3>
+          <p>Strategies and tools to attract potential clients effectively.</p>
+          <a href="https://docs.google.com/spreadsheets/d/1D9nRjNedS47ufTBO0lZp0AK_BaIPwSmYFYUulQVE3Zw/edit?usp=sharing" class="btn btn-view">View</a>
+        </div>
+      </article>
+      <article class="card project">
+        <i class="fa-solid fa-envelope icon"></i>
+        <div class="card-body">
+          <h3>Cold Emailing</h3>
+          <p>Targeted email campaigns to increase outreach and sales.</p>
+          <a href="https://drive.google.com/drive/folders/1RNQaoYlZ4eer4mYEgvSMEMKiEQ-IKxx6" class="btn btn-view">View</a>
+        </div>
+      </article>  
+      <article class="card project">
+        <i class="fa-solid fa-keyboard icon"></i>
+        <div class="card-body">
+          <h3>Data Entry</h3>
+          <p>Organized and accurate data entry for smooth workflows.</p>
+          <a href="https://docs.google.com/spreadsheets/d/17ERwFscDeeDD1FvlkkkkTaJYhEthVCN1DHprdF-3CoY/edit?gid=0#gid=0" class="btn btn-view">View</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section id="experience" class="section container">
+    <h2 class="section-title">Work Experience</h2>
+    <div class="grid cards-3">
+      <article class="card">
+        <h3>Internship</h3>
+        <p><strong>LGU Del Carmen</strong> — Feb 2025</p>
+        <p>Assisting in IT tasks, data entry, documentation, and develop a system for hr office</p>
+      </article>
+      <article class="card">
+        <h3>Freelance Graphic Designer</h3>
+        <p><strong>Direct Clients</strong> — 2023</p>
+        <p>Created social media designs, branding, and marketing assets for clients.</p>
+      </article>
+      <article class="card">
+        <h3>Social Media Marketing</h3>
+        <p><strong>Hapitanan Siargao</strong> — 2023</p>
+        <p>Handled content scheduling, captions, campaigns, and engagement across platforms.</p>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- Work Together -->
+  <section id="work-together" class="section container">
+    <h2 class="section-title">Let’s Work Together</h2>
+    <p class="lead">Looking for a reliable partner for your projects? Whether it’s <strong>web development</strong>, <strong>graphic design</strong>, <strong>social media marketing</strong>, or <strong>executive assistance</strong> — I’d love to collaborate and bring your ideas to life. </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section section-alt">
+  <div class="container about">
+    <img class="about-photo" src="img/M.jpg" alt="Surin portrait"/>
+    <div class="about-copy">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I’m a results-driven Social Media Marketing Specialist based in the Philippines. I create content, manage campaigns, and grow online communities that drive engagement and results.<br>
+        I specialize in turning ideas into viral campaigns that connect brands with their audience.
+      </p>
+      <ul class="checks">
+        <li>Content creation & scheduling</li>
+        <li>Social media campaign management</li>
+        <li>Audience engagement & growth</li>
+        <li>Analytics and performance tracking</li>
+      </ul>
+
+      <h2 class="section-title">Why Work With Me?</h2>
+      <p>
+        I combine creativity, strategy, and dedication to help brands grow their online presence. With fast communication, on-time delivery, and campaigns designed to engage and convert, I ensure every project is a success.
+      </p>
+      <ul class="checks">
+        <li>Proven results in social media growth</li>
+        <li>Creative, engaging content that connects</li>
+        <li>Reliable, on-time communication</li>
+        <li>Data-driven approach for measurable success</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Personal Contact</h2>
+    <div class="social-links">
+      <a href="https://www.instagram.com/suringarrido5/profilecard/?igsh=bjg4dmRzdWVoYTdh" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+      <a href="https://www.linkedin.com/in/surin-garrido-271862379/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://www.facebook.com/suringarrido2002" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+        <span>Facebook</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Surin Garrido. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Toggle navigation on mobile
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+
+  // Set current year in footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
